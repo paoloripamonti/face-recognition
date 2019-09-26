@@ -53,6 +53,7 @@ class FaceRecognition(object):
         start_at = time.time()
         bounding_boxes = []
         image = cv2.imread(path)
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         image = image.astype(np.uint8)
         for person, confidence, box in self.__predict__(image, threshold=threshold):
             # Draw rectangle with person name
@@ -72,7 +73,7 @@ class FaceRecognition(object):
         return {
             "frame": base64.b64encode(buffer).decode('ascii'),
             "elapsed_time": (time.time() - start_at),
-            "bounding_boxes": bounding_boxes
+            "predictions": bounding_boxes
 
         }
 
@@ -189,6 +190,7 @@ class FaceRecognition(object):
         for path in tqdm.tqdm(files):
             # Load image
             image = cv2.imread(path)
+            image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
             # Get person name by folder
             person = os.path.split(os.path.split(path)[0])[1]
@@ -213,6 +215,7 @@ class FaceRecognition(object):
         for index, row in tqdm.tqdm(df.iterrows(), total=df.shape[0]):
             # Load image
             image = cv2.imread(row[path_col])
+            image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
             # Get person name by folder
             person = row[person_col]
