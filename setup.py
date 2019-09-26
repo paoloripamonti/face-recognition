@@ -19,11 +19,13 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     install_requires=[
-        "gensim",
-        "tensorflow",
-        "keras",
-        "numpy",
+        "opencv-python",
+        "mtcnn",
         "sklearn",
-        "tqdm"
+        "tqdm",
+        "numpy",
+        "keras_facenet",
+        "imutils",
+        "tensorflow"
     ]
 )
