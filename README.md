@@ -2,6 +2,8 @@
 
 Simple library to recognize faces from given images
 
+[<img src="https://www.kaggleusercontent.com/kf/21132673/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..Hig7ClqLMXecFinIUQqE_g.Fg1LGL5rc0-PLv7twHxDXzUI8oK3nZGyfpUDv_P-le31C2I2-qoFjWzaxz1n1WlhJqaFyzkqMlfptZy65zaCvk5bxQ5h4bEeS6AFTcORFUdYfMqBM5cYRvWKg4KX-sM-SeWRPRh_s-HWIxe4m2gZWw.l8bObQ1Fhvykp8XMeIAbXw/__results___files/__results___23_0.png">](https://www.kaggle.com/paoloripamonti/face-recogniton)
+
 ### Face Recognition pipeline
 
 Below the pipeline for face recognition:
