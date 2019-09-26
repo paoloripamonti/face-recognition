@@ -26,6 +26,7 @@ setuptools.setup(
         "numpy",
         "keras_facenet",
         "imutils",
-        "tensorflow"
+        "tensorflow",
+        "pandas"
     ]
 )

@@ -199,3 +199,27 @@ class FaceRecognition(object):
                 clf.fit([encoding], [person])
 
         self.clf = clf
+
+    def fit_from_dataframe(self, df, person_col="person", path_col="path"):
+        """
+        Fit classifier from dataframe.
+        :param df: Pandas dataframe
+        :param person_col: Dataframe column with person id
+        :param path_col: Dataframe column with image path
+        """
+        # Initialize classifier
+        clf = EuclideanClassifier()
+
+        for index, row in tqdm.tqdm(df.iterrows(), total=df.shape[0]):
+            # Load image
+            image = cv2.imread(row[path_col])
+
+            # Get person name by folder
+            person = row[person_col]
+
+            # Get encoding
+            for encoding, face, box in self.face_encoding(image):
+                # Add to classifier
+                clf.fit([encoding], [person])
+
+        self.clf = clf

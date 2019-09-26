@@ -5,4 +5,5 @@ tqdm
 numpy
 keras_facenet
 imutils
+pandas
 tensorflow
