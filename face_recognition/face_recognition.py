@@ -13,7 +13,7 @@ import tqdm
 from keras_facenet import FaceNet
 from mtcnn.mtcnn import MTCNN
 
-import config
+from face_recognition import config
 from face_recognition.euclidean_classifier import EuclideanClassifier
 
 warnings.filterwarnings("ignore")
