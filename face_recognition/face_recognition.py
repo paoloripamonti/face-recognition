@@ -40,7 +40,7 @@ class FaceRecognition(object):
         # Euclidean Classifier
         self.clf = None
 
-    def predict(self, path, threshold=0.0):
+    def predict(self, path, threshold=None):
         """
         Find faces and recognize them, return predicted people into image
         :param path: Source image path
@@ -77,7 +77,7 @@ class FaceRecognition(object):
 
         }
 
-    def __predict__(self, image, threshold=0.0):
+    def __predict__(self, image, threshold=None):
         """
         Extract face and perform evaluation
         :param image: Source image
@@ -93,7 +93,7 @@ class FaceRecognition(object):
             else:
                 results = self.clf.predict(encoding)
                 person, confidence = results["person"], results["confidence"]
-                if confidence < threshold:
+                if threshold and confidence < threshold:
                     person = config.UNKNOWN_LABEL
 
                 yield (person, confidence, box)
