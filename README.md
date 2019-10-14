@@ -2,7 +2,7 @@
 
 Simple library to recognize faces from given images
 
-[<img src="https://www.kaggleusercontent.com/kf/21132673/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..Hig7ClqLMXecFinIUQqE_g.Fg1LGL5rc0-PLv7twHxDXzUI8oK3nZGyfpUDv_P-le31C2I2-qoFjWzaxz1n1WlhJqaFyzkqMlfptZy65zaCvk5bxQ5h4bEeS6AFTcORFUdYfMqBM5cYRvWKg4KX-sM-SeWRPRh_s-HWIxe4m2gZWw.l8bObQ1Fhvykp8XMeIAbXw/__results___files/__results___23_0.png">](https://www.kaggle.com/paoloripamonti/face-recogniton)
+[<img src="https://raw.githubusercontent.com/paoloripamonti/face-recognition/master/img/home.png">](https://www.kaggle.com/paoloripamonti/face-recogniton)
 
 ### Face Recognition pipeline
 
@@ -101,9 +101,9 @@ The output is a JSON with folling structure:
 
 ### Example
 
-[<img src="https://www.kaggleusercontent.com/kf/21129215/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..HbixuFgKpuPhmZNn6lkvkQ.ll6VOKAnA0aeJQpm-v9L0hYYZzIAfvvTa1TAxVzJP-bRDPwEpH1WYyrgrX4Vr_ADSI929jwLSGSuuq9KGJnQogJbYVPTRkGW5pBxO8R4rhxrSkg8IoQ6pokYR6ZtehZvjKbK01Bjkow6ykbFWZmZcA.xUV-JT8XBPEHdZJm-yasZQ/__results___files/__results___20_0.png">](https://www.kaggle.com/paoloripamonti/face-recogniton)
+[<img src="https://raw.githubusercontent.com/paoloripamonti/face-recognition/master/img/test1.png">](https://www.kaggle.com/paoloripamonti/face-recogniton)
 
-[<img src="https://www.kaggleusercontent.com/kf/21129215/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..HbixuFgKpuPhmZNn6lkvkQ.ll6VOKAnA0aeJQpm-v9L0hYYZzIAfvvTa1TAxVzJP-bRDPwEpH1WYyrgrX4Vr_ADSI929jwLSGSuuq9KGJnQogJbYVPTRkGW5pBxO8R4rhxrSkg8IoQ6pokYR6ZtehZvjKbK01Bjkow6ykbFWZmZcA.xUV-JT8XBPEHdZJm-yasZQ/__results___files/__results___21_0.png">](https://www.kaggle.com/paoloripamonti/face-recogniton)
+[<img src="https://raw.githubusercontent.com/paoloripamonti/face-recognition/master/img/test2.png">](https://www.kaggle.com/paoloripamonti/face-recogniton)
 
 
 For more details you can see: [https://www.kaggle.com/paoloripamonti/face-recogniton](https://www.kaggle.com/paoloripamonti/face-recogniton)
