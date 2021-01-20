@@ -28,9 +28,6 @@ class FaceRecognition(object):
         """
         Initialize Face Recognition model
         """
-        # GRAPH
-        self.graph = tf.get_default_graph()
-
         # Load Face Detector
         self.face_detector = MTCNN()
 
@@ -126,11 +123,10 @@ class FaceRecognition(object):
         :return: 512 encoding, face and bounding box
         """
         for face, box in self.face_detection(source_image):
-            with self.graph.as_default():
-                # Face encoding
-                encoding = self.facenet.embeddings(np.expand_dims(face, axis=0))[0]
+            # Face encoding
+            encoding = self.facenet.embeddings(np.expand_dims(face, axis=0))[0]
 
-                yield (encoding, face, box)
+            yield encoding, face, box
 
     @staticmethod
     def align_face(face_attribute, image):

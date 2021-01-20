@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 setuptools.setup(
     name='facenet-face-recognition',
-    version='0.1',
+    version='0.2',
     author="Paolo Ripamonti",
     author_email="paolo.ripamonti93@gmail.com",
     description="MTCNN + FaceNet -> Face Recognition",
@@ -26,7 +26,7 @@ setuptools.setup(
         "numpy",
         "keras_facenet",
         "imutils",
-        "tensorflow",
+        "tensorflow==2.4.0",
         "pandas"
     ]
 )
