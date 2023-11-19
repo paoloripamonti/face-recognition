@@ -21,12 +21,12 @@ setuptools.setup(
     install_requires=[
         "opencv-python",
         "mtcnn",
-        "sklearn",
+        "scikit-learn",
         "tqdm",
         "numpy",
         "keras_facenet",
         "imutils",
-        "tensorflow==2.4.0",
+        "tensorflow>=2.8.0,<3.0",
         "pandas"
     ]
 )
